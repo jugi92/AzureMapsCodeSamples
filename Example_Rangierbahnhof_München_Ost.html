@@ -25,6 +25,7 @@
 
     <script>
         var animation, map, datasource, polygonLayer, defaultOptions, removeDefaults, selectedFillPatternIdx = 0;
+        subscriptionKey = prompt("Azure Maps Subscription Key")
 
         var fillPatterns = [
             'fill-checker-blue', 'fill-checker-darkblue', 'fill-checker-green', 'fill-checker-red', 'fill-checker-yellow',
@@ -60,7 +61,7 @@
 
                     //Alternatively, use an Azure Maps key. Get an Azure Maps key at https://azure.com/maps. NOTE: The primary key should be used as the key.
                     authType: 'subscriptionKey',
-                    subscriptionKey: '[YOUR_AZURE_MAPS_KEY]'
+                    subscriptionKey: subscriptionKey
                 }
             });
 
